@@ -41,7 +41,7 @@ export default function CreateProfile() {
         if (isLoaded && isSignedIn && !isPending) {
             mutate();
         }
-    }, [isLoaded, isSignedIn]);
+    }, [isLoaded, isPending, isSignedIn, mutate]);
 
     return <div>processing sign in ....</div>;
 }
